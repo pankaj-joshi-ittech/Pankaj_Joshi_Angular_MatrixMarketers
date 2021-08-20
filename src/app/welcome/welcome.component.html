@@ -1,0 +1,21 @@
+<header class="masthead d-flex align-items-center">
+    <div class="container px-4 px-lg-5 text-center">
+        <h1 class="mb-1">Hola Buddy</h1>
+        <h3 class="mb-5"><em>Welcome in our domain</em></h3>
+        <form [formGroup]="formGroup" (ngSubmit)="handleUserSubmit()" class="pwd-form">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" formControlName="user" type="text" placeholder="Enter user">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-xl">Go Ahead</button>
+                    </div> 
+                </div>
+            </div>
+            
+        </form> 
+    </div>
+</header>
