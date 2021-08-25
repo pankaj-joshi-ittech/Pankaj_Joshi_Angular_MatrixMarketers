@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Main Property Type</th>
+        <th scope="col">Sub Type Mappings</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let data of temArray;">
+            <th scope="row">{{data}}</th>
+            <td *ngFor="let item of getData[data] | keyvalue">
+                {{item.key}} :{{item.value}}
+            </td>
+        </tr>
+    </tbody>
+  </table>
